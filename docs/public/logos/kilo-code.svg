@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <!-- Kilo Code: K1L0 字标，i/o 即 1/0（二进制彩蛋），手绘粗线 -->
+  <g stroke="#1A1C20" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M14 32 V66 M20 34 L36 46 M20 58 L36 46"/>
+    <path d="M44 36 V66 M40 30 H48 M41 60 H47"/>
+    <path d="M53 32 V66 H64"/>
+    <ellipse cx="76" cy="49" rx="7" ry="17"/>
+    <path d="M73 63 L81 35"/>
+  </g>
+</svg>

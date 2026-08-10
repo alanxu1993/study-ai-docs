@@ -1,0 +1,19 @@
+# 依赖
+node_modules/
+.npm-cache/
+
+# 构建产物
+dist/
+**/.vitepress/dist/
+**/.vitepress/cache/
+**/.vitepress/config.ts.timestamp-*.mjs
+
+# 本地工具/编辑器
+.claude/
+.workbuddy/
+
+# 系统与日志
+.DS_Store
+Thumbs.db
+*.bak
+*.log

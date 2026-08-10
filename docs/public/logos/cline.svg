@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <!-- Cline: 开口"C"爪标 + 顶部圆点 + 两根内条 -->
+  <path d="M48 12 A 36 36 0 1 0 48 84" fill="none" stroke="#1A1C20" stroke-width="15" stroke-linecap="round"/>
+  <circle cx="48" cy="24" r="8" fill="#1A1C20"/>
+  <rect x="29" y="39" width="9" height="24" rx="4.5" fill="#1A1C20"/>
+  <rect x="58" y="39" width="9" height="24" rx="4.5" fill="#1A1C20"/>
+</svg>

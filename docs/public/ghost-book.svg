@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" width="320" height="200" role="img" aria-label="几只黑色幽灵在翻一本打开的书">
+  <title>幽灵翻书</title>
+  <defs>
+    <style>
+      /* 幽灵上下浮动 */
+      @keyframes bob {
+        0%, 100% { transform: translateY(0); }
+        50%      { transform: translateY(-5px); }
+      }
+      .bob  { animation: bob 2.4s ease-in-out infinite; }
+      .bob2 { animation: bob 2.4s ease-in-out infinite; animation-delay: .8s; }
+      .bob3 { animation: bob 2.4s ease-in-out infinite; animation-delay: 1.6s; }
+
+      /* 翻页动画：绕书脊（页面左边缘）来回翻转 */
+      @keyframes flip {
+        0%, 12%   { transform: perspective(600px) rotateY(0deg); }
+        38%, 50%  { transform: perspective(600px) rotateY(-180deg); }
+        88%, 100% { transform: perspective(600px) rotateY(-360deg); }
+      }
+      .pageflip {
+        transform-box: fill-box;
+        transform-origin: left center;
+        animation: flip 4s ease-in-out infinite;
+      }
+    </style>
+
+    <!-- 简约黑色幽灵：圆顶 + 波浪下摆 + 白色圆点眼 -->
+    <g id="ghost">
+      <path d="M0 0 C -13 0 -20 6 -20 15 L -20 38 L -15 34 L -10 38 L -5 34 L 0 38 L 5 34 L 10 38 L 15 34 L 20 38 L 20 15 C 20 6 13 0 0 0 Z"
+            fill="#1A1C20"/>
+      <circle cx="-7" cy="12" r="2.6" fill="#FFFFFF"/>
+      <circle cx=" 7" cy="12" r="2.6" fill="#FFFFFF"/>
+    </g>
+  </defs>
+
+  <!-- 地面 -->
+  <line x1="20" y1="170" x2="300" y2="170" stroke="#2D2F34" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- 打开的书（封底轮廓 + 左右页 + 书脊） -->
+  <rect x="90" y="98" width="140" height="72" rx="4" fill="#FFFFFF" stroke="#1A1C20" stroke-width="2.5"/>
+  <rect x="93" y="101" width="64" height="66" fill="#F5F5F5"/>
+  <rect x="163" y="101" width="64" height="66" fill="#F5F5F5"/>
+  <line x1="160" y1="98" x2="160" y2="170" stroke="#1A1C20" stroke-width="2"/>
+
+  <!-- 左页文字（静态） -->
+  <g stroke="#C2C2C2" stroke-width="2" stroke-linecap="round">
+    <line x1="100" y1="120" x2="150" y2="120"/>
+    <line x1="100" y1="132" x2="150" y2="132"/>
+    <line x1="100" y1="144" x2="150" y2="144"/>
+    <line x1="100" y1="156" x2="138" y2="156"/>
+  </g>
+
+  <!-- 翻动中的页：白色 + 浅边 + 顶部两行小字（翻转后也不突兀） -->
+  <g class="pageflip">
+    <rect x="163" y="101" width="64" height="66" fill="#FFFFFF" stroke="#1A1C20" stroke-width="1.5"/>
+    <g stroke="#C2C2C2" stroke-width="2" stroke-linecap="round">
+      <line x1="170" y1="120" x2="200" y2="120"/>
+      <line x1="170" y1="132" x2="190" y2="132"/>
+    </g>
+  </g>
+
+  <!-- 三只幽灵：左 / 右 / 头顶小只，小手捏住页角 -->
+  <g transform="translate(58 118)">
+    <g class="bob">
+      <use href="#ghost"/>
+      <path d="M 20 6 Q 28 0 34 -6" fill="none" stroke="#1A1C20" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="34" cy="-6" r="3" fill="#1A1C20"/>
+    </g>
+  </g>
+  <g transform="translate(262 118)">
+    <g class="bob2">
+      <use href="#ghost"/>
+      <path d="M -20 6 Q -28 0 -34 -6" fill="none" stroke="#1A1C20" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="-34" cy="-6" r="3" fill="#1A1C20"/>
+    </g>
+  </g>
+  <g transform="translate(160 54) scale(0.62) rotate(8)"><g class="bob3"><use href="#ghost"/></g></g>
+</svg>

@@ -1,0 +1,22 @@
+{
+  "name": "study-ai-docs",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "AI 学习文档 - Claude Code 快速上手 + AI Agent 入门",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs",
+    "admin": "node server/index.js",
+    "start": "npm run build && node server/index.js",
+    "start:no-build": "node server/index.js"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.3"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "cors": "^2.8.5",
+    "marked": "^15.0.4"
+  }
+}

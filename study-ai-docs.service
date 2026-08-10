@@ -1,0 +1,33 @@
+# systemd 服务文件（替代 PM2 的方案）
+# 复制到 /etc/systemd/system/study-ai-docs.service
+# 启用: systemctl enable study-ai-docs
+# 启动: systemctl start study-ai-docs
+# 状态: systemctl status study-ai-docs
+
+[Unit]
+Description=AI 学习文档站点
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+WorkingDirectory=/opt/study-ai-docs
+Environment=NODE_ENV=production
+Environment=PORT=3001
+Environment=NODE_OPTIONS=--max-old-space-size=2048
+ExecStart=/usr/bin/node server/index.js
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=study-ai-docs
+
+# 安全加固
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=yes
+ReadWritePaths=/opt/study-ai-docs/docs
+
+[Install]
+WantedBy=multi-user.target
