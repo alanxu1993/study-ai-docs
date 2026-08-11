@@ -2,174 +2,88 @@
 layout: home
 
 hero:
-  name: "Alan的AI世界"
+  name: "AI学习平台"
   text: "从入门到实战"
-  tagline: Claude Code · Zoo Code · Cline · Kilo Code 快速上手 + AI Agent 入门教程 — 系统学习 AI 编程与智能体
+  tagline: 系统学习 AI 编程与智能体 —— Claude Code · Codex · Hermes Agent 深度教程
   image:
     src: /ghost-book.svg
-    alt: Alan的AI世界
+    alt: AI学习平台
   actions:
     - theme: brand
       text: Claude Code 快速上手
       link: /claude-code/
     - theme: alt
-      text: Cline 快速上手
-      link: /cline/
-    - theme: alt
-      text: Zoo Code 快速上手
-      link: /zoo-code/
-    - theme: alt
-      text: Kilo Code 快速上手
-      link: /kilo-code/
-    - theme: alt
-      text: AI Agent 入门
-      link: /ai-agent/
-
-features:
-  - icon:
-      src: /logos/claude-code.svg
-      alt: Claude Code
-      width: 48
-      height: 48
-    title: Claude Code 教程
-    details: 从零开始的 Claude Code 安装与使用指南。涵盖安装配置、登录方式、国产模型切换、常用命令与技巧、常见问题解决等完整内容。
-    link: /claude-code/
-  - icon:
-      src: /logos/zoo-code.svg
-      alt: Zoo Code
-      width: 48
-      height: 48
-    title: Zoo Code 教程
-    details: Roo Code 社区继任者，开源 AI 编程代理。支持 Semble 代码库智能、Orchestrator 任务编排、DCG 破坏性命令防护与 18 种语言。
-    link: /zoo-code/
-  - icon:
-      src: /logos/cline.svg
-      alt: Cline
-      width: 48
-      height: 48
-    title: Cline 教程
-    details: 开源 AI 编码代理，覆盖 VS Code、JetBrains、CLI 与 SDK。Plan/Act 双模式、自动上下文管理、MCP 扩展与多代理团队。
-    link: /cline/
-  - icon:
-      src: /logos/kilo-code.svg
-      alt: Kilo Code
-      width: 48
-      height: 48
-    title: Kilo Code 教程
-    details: 全平台 AI 编码助手，覆盖 VS Code、JetBrains、CLI、移动端与 Slack。500+ 模型零加价切换、内置协作与 AI 代码审查。
-    link: /kilo-code/
-  - icon:
-      src: /logos/ai-agent.svg
-      alt: AI Agent
-      width: 48
-      height: 48
-    title: AI Agent 入门
-    details: 系统学习 AI Agent 的核心概念、架构设计、发展历程与前沿应用。理解 Agent 的思考与行动循环，掌握 ReAct 模式。
-    link: /ai-agent/
-  - icon:
-      src: /logos/tools.svg
-      alt: 实战技巧
-      width: 48
-      height: 48
-    title: 实战技巧
-    details: 包含国产大模型配置、命令行操作技巧、上下文管理、权限控制等实用技能。从安装到高效使用，一步到位。
-  - icon:
-      src: /logos/codex.svg
-      alt: Codex
-      width: 48
-      height: 48
-    title: Codex 教程
-    details: Windsurf 平台上的 AI 编程助手，支持多模型切换、自定义规则、智能记忆与自动化工作流，打造个性化编码体验。
-    link: /codex/
-  - icon:
-      src: /logos/hermes.svg
-      alt: Hermes
-      width: 48
-      height: 48
-    title: Hermes Agent 教程
-    details: 终端原生的 AI 工程代理，支持任务规划、多工具调用、子代理协作与定时任务，打造自动化开发工作流。
-    link: /hermes/
-  - icon:
-      src: /logos/agent-dev.svg
-      alt: Agent 开发
-      width: 48
-      height: 48
-    title: Agent 开发
-    details: 深入 AI Agent 开发实战，学习如何构建、调试和部署自定义智能体，掌握 Agent 框架与工具链的核心用法。
-    link: /agent-dev/
+      text: Codex 教程
+      link: /codex/
 ---
 
-## 开始学习
+## 主流AI 工具
 
-选择你感兴趣的课程，开始 AI 学习之旅。
-
-<div class="quick-links">
-  <a class="quick-link" href="/claude-code/">
-    <span class="icon"><img class="ql-logo" src="/logos/claude-code.svg" alt=""></span>
-    <span class="title">Claude Code 快速上手</span>
-    <span class="desc">终端原生的 AI 编程助手，30 分钟上手</span>
+<div class="card-group">
+  <a class="card" href="/claude-code/">
+    <img class="card-logo" src="/logos/claude-code.svg" alt="Claude Code">
+    <div class="card-body">
+      <div class="card-title">Claude Code 教程</div>
+      <div class="card-desc">Anthropic 官方 AI 编程助手。覆盖安装配置、权限模式、Hooks、MCP、Skills 与最佳实践，从入门到进阶的完整指南。</div>
+    </div>
   </a>
-  <a class="quick-link" href="/cline/">
-    <span class="icon"><img class="ql-logo" src="/logos/cline.svg" alt=""></span>
-    <span class="title">Cline 快速上手</span>
-    <span class="desc">开源 AI 编码代理，VS Code / JetBrains / CLI 通用</span>
+  <a class="card" href="/codex/">
+    <img class="card-logo" src="/logos/codex.svg" alt="Codex">
+    <div class="card-body">
+      <div class="card-title">Codex 教程</div>
+      <div class="card-desc">OpenAI 官方 AI 编程代理。CLI 高效编码，支持 Hooks 钩子、MCP、Skills、Subagent 与自定义工作流。</div>
+    </div>
   </a>
-  <a class="quick-link" href="/zoo-code/">
-    <span class="icon"><img class="ql-logo" src="/logos/zoo-code.svg" alt=""></span>
-    <span class="title">Zoo Code 快速上手</span>
-    <span class="desc">Roo Code 社区继任者，全功能 AI 编程代理</span>
-  </a>
-  <a class="quick-link" href="/kilo-code/">
-    <span class="icon"><img class="ql-logo" src="/logos/kilo-code.svg" alt=""></span>
-    <span class="title">Kilo Code 快速上手</span>
-    <span class="desc">全平台 AI 编码助手，500+ 模型自由切换</span>
-  </a>
-  <a class="quick-link" href="/ai-agent/">
-    <span class="icon"><img class="ql-logo" src="/logos/ai-agent.svg" alt=""></span>
-    <span class="title">AI Agent 入门教程</span>
-    <span class="desc">从概念到实战，系统学习智能体</span>
+  <a class="card" href="/hermes/">
+    <img class="card-logo" src="/logos/hermes.svg" alt="Hermes Agent">
+    <div class="card-body">
+      <div class="card-title">Hermes Agent 教程</div>
+      <div class="card-desc">Nous Research 开源自进化 AI 代理。终端原生，支持多工具调用、子代理协作、cron 定时任务与记忆系统。</div>
+    </div>
   </a>
 </div>
 
-<style>
-.quick-links {
-  display: flex;
-  gap: 24px;
-  margin-top: 32px;
-  flex-wrap: wrap;
-}
-.quick-link {
-  flex: 1;
-  min-width: 240px;
-  padding: 24px;
-  border: 1px solid var(--vp-c-bg-soft);
-  border-radius: 12px;
-  text-decoration: none !important;
-  transition: border-color 0.3s, box-shadow 0.3s;
-}
-.quick-link:hover {
-  border-color: var(--vp-c-brand-1);
-  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.15);
-}
-.quick-link .icon {
-  display: inline-block;
-}
-.quick-link .ql-logo {
-  width: 32px;
-  height: 32px;
-  display: block;
-}
-.quick-link .title {
-  display: block;
-  margin-top: 12px;
-  font-size: 18px;
-  font-weight: 600;
-  color: var(--vp-c-text-1);
-}
-.quick-link .desc {
-  display: block;
-  margin-top: 4px;
-  font-size: 14px;
-  color: var(--vp-c-text-2);
-}
-</style>
+## 更多编码工具
+
+<div class="card-group">
+  <a class="card" href="/zoo-code/">
+    <img class="card-logo" src="/logos/zoo-code.svg" alt="Zoo Code">
+    <div class="card-body">
+      <div class="card-title">Zoo Code 教程</div>
+      <div class="card-desc">Roo Code 社区继任者，开源 AI 编程代理。支持代码库智能、任务编排与破坏性命令防护。</div>
+    </div>
+  </a>
+  <a class="card" href="/cline/">
+    <img class="card-logo" src="/logos/cline.svg" alt="Cline">
+    <div class="card-body">
+      <div class="card-title">Cline 教程</div>
+      <div class="card-desc">开源 AI 编码代理。Plan/Act 双模式、自动上下文管理、MCP 扩展与多代理团队。</div>
+    </div>
+  </a>
+  <a class="card" href="/kilo-code/">
+    <img class="card-logo" src="/logos/kilo-code.svg" alt="Kilo Code">
+    <div class="card-body">
+      <div class="card-title">Kilo Code 教程</div>
+      <div class="card-desc">全平台 AI 编码助手。500+ 模型零加价切换、内置协作与 AI 代码审查。</div>
+    </div>
+  </a>
+</div>
+
+## AI Agent 学习
+
+<div class="card-group">
+  <a class="card" href="/ai-agent/">
+    <img class="card-logo" src="/logos/ai-agent.svg" alt="AI Agent">
+    <div class="card-body">
+      <div class="card-title">AI Agent 入门</div>
+      <div class="card-desc">系统学习 AI Agent 的核心概念、架构设计与发展历程。理解 Agent 的思考与行动循环，掌握 ReAct 模式。</div>
+    </div>
+  </a>
+  <a class="card" href="/agent-dev/">
+    <img class="card-logo" src="/logos/agent-dev.svg" alt="Agent 开发">
+    <div class="card-body">
+      <div class="card-title">Agent 开发</div>
+      <div class="card-desc">深入 AI Agent 开发实战，学习构建、调试和部署自定义智能体，掌握 Agent 框架与工具链。</div>
+    </div>
+  </a>
+</div>
