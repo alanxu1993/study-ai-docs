@@ -22,10 +22,13 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: 'Claude Code', link: '/claude-code/' },
+      { text: 'Codex', link: '/codex/' },
+      { text: 'Hermes', link: '/hermes/' },
       { text: 'Zoo Code', link: '/zoo-code/' },
       { text: 'Cline', link: '/cline/' },
       { text: 'Kilo Code', link: '/kilo-code/' },
       { text: 'AI Agent', link: '/ai-agent/' },
+      { text: 'Agent 开发', link: '/agent-dev/' },
     ],
 
     sidebar: {
@@ -127,6 +130,91 @@ export default defineConfig({
             { text: '四、核心功能', link: '/kilo-code/features' },
             { text: '五、模型配置', link: '/kilo-code/models' },
             { text: '六、总结', link: '/kilo-code/summary' },
+          ]
+        }
+      ],
+      '/codex/': [
+        {
+          text: '基础配置',
+          items: [
+            { text: 'Codex 完整教程', link: '/codex/' },
+            { text: '一、基础配置教程', link: '/codex/codex-basic-config' },
+            { text: '二、高级配置教程', link: '/codex/codex-advanced-config' },
+            { text: '三、提示词使用教程', link: '/codex/codex-prompts' },
+          ]
+        },
+        {
+          text: '核心功能',
+          items: [
+            { text: '四、Hooks 使用教程', link: '/codex/codex-hooks' },
+            { text: '五、MCP 全流程使用教程', link: '/codex/codex-mcp' },
+            { text: '六、Skills 使用教程', link: '/codex/codex-skills' },
+            { text: '七、Plugins 使用教程', link: '/codex/codex-plugins' },
+          ]
+        },
+        {
+          text: '进阶能力',
+          items: [
+            { text: '八、Rules 使用教程', link: '/codex/codex-rules' },
+            { text: '九、Subagent 实用教程', link: '/codex/codex-subagent' },
+            { text: '十、记忆功能使用教程', link: '/codex/codex-memory' },
+            { text: '十一、AGENTS 加载指令详解', link: '/codex/codex-agents-md' },
+          ]
+        },
+        {
+          text: '实战与优化',
+          items: [
+            { text: '十二、官方工作流指南', link: '/codex/codex-workflows' },
+            { text: '十三、项目定制化教程', link: '/codex/codex-customization' },
+            { text: '十四、示例配置教程', link: '/codex/codex-examples' },
+            { text: '十五、最佳实践', link: '/codex/codex-best-practices' },
+          ]
+        }
+      ],
+      '/hermes/': [
+        {
+          text: '入门与安装',
+          items: [
+            { text: 'Hermes Agent 完整教程', link: '/hermes/' },
+            { text: '一、快速入门教程', link: '/hermes/hermes-quick-start' },
+            { text: '二、安装教程', link: '/hermes/hermes-install' },
+            { text: '三、配置教程', link: '/hermes/hermes-config' },
+          ]
+        },
+        {
+          text: '核心功能',
+          items: [
+            { text: '四、工具使用教程', link: '/hermes/hermes-tools' },
+            { text: '五、会话使用教程', link: '/hermes/hermes-sessions' },
+            { text: '六、SubAgent 子代理', link: '/hermes/hermes-subagent' },
+            { text: '七、插件使用教程', link: '/hermes/hermes-plugins' },
+          ]
+        },
+        {
+          text: '进阶能力',
+          items: [
+            { text: '八、Hooks 钩子教程', link: '/hermes/hermes-hooks' },
+            { text: '九、Profiles 多实例配置教程', link: '/hermes/hermes-profiles' },
+            { text: '十、cron 定时任务使用教程', link: '/hermes/hermes-cron' },
+            { text: '十一、代码工具使用教程', link: '/hermes/hermes-code-tools' },
+            { text: '十二、电脑操控使用教程', link: '/hermes/hermes-computer-use' },
+          ]
+        },
+        {
+          text: '生态与实战',
+          items: [
+            { text: '十三、接入 Claude Code 教程', link: '/hermes/hermes-claude-code' },
+            { text: '十四、记忆使用教程', link: '/hermes/hermes-memory' },
+            { text: '十五、代理上下文使用教程', link: '/hermes/hermes-context' },
+            { text: '十六、代理技能使用教程', link: '/hermes/hermes-skills' },
+          ]
+        }
+      ],
+      '/agent-dev/': [
+        {
+          text: 'Agent 开发教程',
+          items: [
+            { text: 'Agent 开发总览', link: '/agent-dev/' },
           ]
         }
       ],
