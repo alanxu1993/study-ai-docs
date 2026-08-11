@@ -424,6 +424,48 @@
   font-weight: 600;
 }
 
+/* 导航栏 SVG 漫画线条图标 */
+.VPNavBarMenuLink[href="/"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 4px;
+  background: url('/logos/icon-home.svg') no-repeat center;
+  background-size: contain;
+  vertical-align: middle;
+}
+.VPNavBarMenuLink[href="/prompt-library/"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 4px;
+  background: url('/logos/icon-book.svg') no-repeat center;
+  background-size: contain;
+  vertical-align: middle;
+}
+.VPNavBarMenuLink[href="/mcp-factory/"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 4px;
+  background: url('/logos/icon-tools.svg') no-repeat center;
+  background-size: contain;
+  vertical-align: middle;
+}
+.VPNavBarMenuLink[href="/skills/"]::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 4px;
+  background: url('/logos/icon-cart.svg') no-repeat center;
+  background-size: contain;
+  vertical-align: middle;
+}
+
 .VPNav .VPNavBarMenuLink,
 .VPNav .VPNavBarMenuGroup .button {
   color: var(--vp-c-text-2);
@@ -606,7 +648,84 @@
 }
 
 /* ============================================================
-   13. 打印样式
+   13. Skill超市全屏嵌入
+   ============================================================ */
+.skills-page {
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: none !important;
+}
+.skills-page .VPDoc {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.skills-page .VPDoc .content-container {
+  max-width: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.skills-page .VPContent .container {
+  max-width: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.skills-page .VPDocAside {
+  display: none !important;
+}
+.skills-page .aside {
+  display: none !important;
+}
+.skills-page .VPDoc .aside {
+  display: none !important;
+}
+.skills-page .VPSidebar {
+  display: none !important;
+}
+.skills-page .sidebar {
+  display: none !important;
+}
+.skills-page .VPContent {
+  padding-top: 0 !important;
+}
+.skills-page .VPContent .container {
+  max-width: none !important;
+  padding: 0 !important;
+}
+.skills-page .VPDoc .container {
+  max-width: none !important;
+  padding: 0 !important;
+}
+.skills-page .VPContent .VPDoc .container .content {
+  padding: 0 !important;
+  max-width: none !important;
+}
+.skills-page .VPContent .VPDoc .container .content .content-container {
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: none !important;
+  min-height: calc(100vh - var(--vp-nav-height)) !important;
+}
+.skills-page .VPContent .VPDoc:not(.has-sidebar) .container {
+  max-width: none !important;
+}
+.skills-page .VPContent .VPDoc .container .aside {
+  display: none !important;
+}
+.skills-page iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - var(--vp-nav-height));
+  border: none;
+  display: block;
+}
+.skills-page .content-container {
+  position: relative;
+}
+
+/* ============================================================
+   14. 打印样式
    ============================================================ */
 @media print {
   .VPSidebar,

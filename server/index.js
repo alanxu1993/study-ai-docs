@@ -184,14 +184,14 @@ if (IS_PRODUCTION) {
 app.listen(PORT, '0.0.0.0', () => {
     if (IS_PRODUCTION) {
         console.log('');
-        console.log('  📚 AI 学习文档 - 生产模式');
+        console.log('  📚 Alan的AI世界 - 生产模式');
         console.log(`  文档站:  http://localhost:${PORT}/`);
         console.log(`  后台管理: http://localhost:${PORT}/admin/`);
         console.log(`  API:     http://localhost:${PORT}/api/files`);
         console.log('');
     } else {
         console.log('');
-        console.log('  📚 AI 学习文档管理后台 - 开发模式');
+        console.log('  📚 Alan的AI世界管理后台 - 开发模式');
         console.log(`  管理界面: http://localhost:${PORT}/admin/`);
         console.log('  提示: VitePress 需单独启动 → npm run docs:dev');
         console.log('');

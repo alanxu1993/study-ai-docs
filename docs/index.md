@@ -2,12 +2,12 @@
 layout: home
 
 hero:
-  name: "AI 学习文档"
+  name: "Alan的AI世界"
   text: "从入门到实战"
   tagline: Claude Code · Zoo Code · Cline · Kilo Code 快速上手 + AI Agent 入门教程 — 系统学习 AI 编程与智能体
   image:
     src: /ghost-book.svg
-    alt: AI 学习文档
+    alt: Alan的AI世界
   actions:
     - theme: brand
       text: Claude Code 快速上手
@@ -73,6 +73,30 @@ features:
       height: 48
     title: 实战技巧
     details: 包含国产大模型配置、命令行操作技巧、上下文管理、权限控制等实用技能。从安装到高效使用，一步到位。
+  - icon:
+      src: /logos/codex.svg
+      alt: Codex
+      width: 48
+      height: 48
+    title: Codex 教程
+    details: Windsurf 平台上的 AI 编程助手，支持多模型切换、自定义规则、智能记忆与自动化工作流，打造个性化编码体验。
+    link: /codex/
+  - icon:
+      src: /logos/hermes.svg
+      alt: Hermes
+      width: 48
+      height: 48
+    title: Hermes Agent 教程
+    details: 终端原生的 AI 工程代理，支持任务规划、多工具调用、子代理协作与定时任务，打造自动化开发工作流。
+    link: /hermes/
+  - icon:
+      src: /logos/agent-dev.svg
+      alt: Agent 开发
+      width: 48
+      height: 48
+    title: Agent 开发
+    details: 深入 AI Agent 开发实战，学习如何构建、调试和部署自定义智能体，掌握 Agent 框架与工具链的核心用法。
+    link: /agent-dev/
 ---
 
 ## 开始学习

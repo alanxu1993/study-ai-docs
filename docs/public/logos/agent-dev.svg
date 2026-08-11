@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <!-- Agent 开发: 齿轮 + 三角播放 -->
+  <g stroke="#1A1C20" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <circle cx="48" cy="48" r="16"/>
+    <path d="M48 22 L48 14"/>
+    <path d="M48 74 L48 82"/>
+    <path d="M22 48 L14 48"/>
+    <path d="M74 48 L82 48"/>
+    <path d="M29 29 L23 23"/>
+    <path d="M67 67 L73 73"/>
+    <path d="M29 67 L23 73"/>
+    <path d="M67 29 L73 23"/>
+    <path d="M40 36 L40 60 L58 48 Z" fill="#1A1C20"/>
+  </g>
+</svg>

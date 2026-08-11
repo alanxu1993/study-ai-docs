@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <!-- Codex: 菱形尖括号 < > 组合 -->
+  <g stroke="#1A1C20" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M28 36 L16 48 L28 60"/>
+    <path d="M68 36 L80 48 L68 60"/>
+    <path d="M40 24 L56 72"/>
+  </g>
+</svg>
