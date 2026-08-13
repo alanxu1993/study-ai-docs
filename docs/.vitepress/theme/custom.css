@@ -5,14 +5,14 @@
 
 /* ============================================================
    1. 亮色模式 — CSS 变量覆盖
-   亚光白底 #F5F5F5，岩黑文字 #1A1C20
+   纯白底 #FFFFFF，岩黑文字 #1A1C20
    ============================================================ */
 :root {
   /* --- 页面背景 --- */
-  --vp-c-bg: #F5F5F5;
-  --vp-c-bg-alt: #EDEDED;
+  --vp-c-bg: #FFFFFF;
+  --vp-c-bg-alt: #F7F7F7;
   --vp-c-bg-elv: #FFFFFF;
-  --vp-c-bg-soft: #E8E8E8;
+  --vp-c-bg-soft: #F2F2F2;
 
   /* --- 文字 --- */
   --vp-c-text-1: #1A1C20;
@@ -43,8 +43,8 @@
   --vp-sidebar-active-bg: #D8D8D8;
 
   /* --- 导航栏 --- */
-  --vp-nav-bg-color: rgba(245, 245, 245, 0.92);
-  --vp-nav-screen-bg-color: #F5F5F5;
+  --vp-nav-bg-color: rgba(255, 255, 255, 0.92);
+  --vp-nav-screen-bg-color: #FFFFFF;
 
   /* --- 首页 --- */
   --vp-home-hero-name-color: #1A1C20;
@@ -648,70 +648,87 @@
 }
 
 /* ============================================================
-   13. Skill超市全屏嵌入
+   13. Skill超市 / Prompt图书馆 全屏嵌入
    ============================================================ */
-.skills-page {
+.skills-page,
+.prompt-library-page {
   padding: 0 !important;
   margin: 0 !important;
   max-width: none !important;
 }
-.skills-page .VPDoc {
+.skills-page .VPDoc,
+.prompt-library-page .VPDoc {
   padding: 0 !important;
   margin: 0 !important;
 }
-.skills-page .VPDoc .content-container {
+.skills-page .VPDoc .content-container,
+.prompt-library-page .VPDoc .content-container {
   max-width: none !important;
   padding: 0 !important;
   margin: 0 !important;
 }
-.skills-page .VPContent .container {
+.skills-page .VPContent .container,
+.prompt-library-page .VPContent .container {
   max-width: none !important;
   padding: 0 !important;
   margin: 0 !important;
 }
-.skills-page .VPDocAside {
+.skills-page .VPDocAside,
+.prompt-library-page .VPDocAside {
   display: none !important;
 }
-.skills-page .aside {
+.skills-page .aside,
+.prompt-library-page .aside {
   display: none !important;
 }
-.skills-page .VPDoc .aside {
+.skills-page .VPDoc .aside,
+.prompt-library-page .VPDoc .aside {
   display: none !important;
 }
-.skills-page .VPSidebar {
+.skills-page .VPSidebar,
+.prompt-library-page .VPSidebar {
   display: none !important;
 }
-.skills-page .sidebar {
+.skills-page .sidebar,
+.prompt-library-page .sidebar {
   display: none !important;
 }
-.skills-page .VPContent {
+.skills-page .VPContent,
+.prompt-library-page .VPContent {
   padding-top: 0 !important;
 }
-.skills-page .VPContent .container {
+.skills-page .VPContent .container,
+.prompt-library-page .VPContent .container {
   max-width: none !important;
   padding: 0 !important;
 }
-.skills-page .VPDoc .container {
+.skills-page .VPDoc .container,
+.prompt-library-page .VPDoc .container {
   max-width: none !important;
   padding: 0 !important;
 }
-.skills-page .VPContent .VPDoc .container .content {
+.skills-page .VPContent .VPDoc .container .content,
+.prompt-library-page .VPContent .VPDoc .container .content {
   padding: 0 !important;
   max-width: none !important;
 }
-.skills-page .VPContent .VPDoc .container .content .content-container {
+.skills-page .VPContent .VPDoc .container .content .content-container,
+.prompt-library-page .VPContent .VPDoc .container .content .content-container {
   padding: 0 !important;
   margin: 0 !important;
   max-width: none !important;
   min-height: calc(100vh - var(--vp-nav-height)) !important;
 }
-.skills-page .VPContent .VPDoc:not(.has-sidebar) .container {
+.skills-page .VPContent .VPDoc:not(.has-sidebar) .container,
+.prompt-library-page .VPContent .VPDoc:not(.has-sidebar) .container {
   max-width: none !important;
 }
-.skills-page .VPContent .VPDoc .container .aside {
+.skills-page .VPContent .VPDoc .container .aside,
+.prompt-library-page .VPContent .VPDoc .container .aside {
   display: none !important;
 }
-.skills-page iframe {
+.skills-page iframe,
+.prompt-library-page iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -720,7 +737,8 @@
   border: none;
   display: block;
 }
-.skills-page .content-container {
+.skills-page .content-container,
+.prompt-library-page .content-container {
   position: relative;
 }
 
@@ -795,6 +813,28 @@
   margin-bottom: 0.75rem;
   padding-bottom: 0.35rem;
   border-bottom: 1px solid var(--vp-c-divider);
+}
+
+/* 首页学习视频播放器 */
+.home-video {
+  margin: 24px 0 48px;
+}
+
+.home-video video {
+  width: 100%;
+  max-width: 320px;
+  display: block;
+  background: #000;
+  border-radius: 8px;
+  border: 1px solid var(--vp-c-divider);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home-video-title {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--vp-c-text-2);
 }
 
 /* ============================================================

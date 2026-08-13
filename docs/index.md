@@ -87,3 +87,13 @@ hero:
     </div>
   </a>
 </div>
+
+## 学习视频
+
+<div class="home-video">
+  <video controls preload="metadata" playsinline>
+    <source src="/videos/baoyu-skill-guide.mp4" type="video/mp4">
+    您的浏览器不支持 HTML5 视频播放，请使用 Chrome / Edge / Firefox 等现代浏览器。
+  </video>
+  <div class="home-video-title">Skill的使用-从baoyu-skill实践开始</div>
+</div>

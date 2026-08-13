@@ -17,3 +17,7 @@ dist/
 Thumbs.db
 *.bak
 *.log
+
+# 视频（体积大，不入库）
+video/
+docs/public/videos/
