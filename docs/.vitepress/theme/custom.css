@@ -816,8 +816,15 @@
 }
 
 /* 首页学习视频播放器 */
-.home-video {
+.home-videos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
   margin: 24px 0 48px;
+}
+
+.home-video {
+  flex: 0 0 320px;
 }
 
 .home-video video {
